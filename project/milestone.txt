@@ -1,0 +1,28 @@
+CS193X Final Project Milestone
+==============================
+
+Project Title: Mood Journal
+Your Name: David Thao
+Your SUNetID: dthao
+
+Overview
+--------
+I've decided to change my project entirely, as I decided that the Recipe Finder website wasn't my cup of tea. Instead, I'll do a combination of a mood tracker and daily journal app, where users will be able to write notes onto the website and input what their mood level. This mood level will be tracked over time and then be displayed visually some way (graphs?, colors?)
+
+Project Changes
+---------------
+Pretty much the whole thing. 
+
+Implementation Details
+----------------------
+I will be using a similar class to the cards that was used in the previous assignments as a way to write the notes every day. There will probably be a class that helps abstract away the details of the mood tracker. The endpoints for my API will mostly involve tracking data for different users. I have a rough outline of what I want to do, which I will be working on a lot in the next few days. 
+
+External libraries and code
+---------------------------
+Code from assignment 2.2 and 2.1. Will look into external libraries to use. 
+
+Collaboration and resources
+---------------------------
+
+Anything else?
+--------------

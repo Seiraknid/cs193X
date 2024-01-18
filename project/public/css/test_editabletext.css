@@ -1,0 +1,29 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  width: 25em;
+}
+
+h1 {
+  font-size: x-large;
+  margin: 0;
+}
+
+.labeledInput {
+  display: flex;
+  align-items: center;
+}
+
+.labeledInput label {
+  width: 5em;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+#setButton {
+  align-self: center;
+}

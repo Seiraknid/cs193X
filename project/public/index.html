@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mood Journal</title>
+
+    <!-- This line provides automatic page and style reloading when files change -->
+    
+    <script type="module" src="/lib/client/updater.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="js/index.js"></script>
+  </head>
+  <body>
+    <header id="header" class="hidden">
+      <div>
+        <h1 class="brand">Mood Journal - </h1>
+      </div>
+    </header>
+
+    <main id="welcome">
+      <div class="paper">
+        <h1><strong class="brand">Mood Journal</strong></h1>
+        <img src="images/mood.png">
+        <h2>Log in to view your notes</h2>
+        <div class="welcomeContainer">
+          <form id="loginForm">
+            <input name="userid" placeholder="User ID">
+            <button type="submit" name="login">Login</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <main id="main" class="hidden">
+      <div class="widthContainer">
+        <section id="feedPanel">
+          <form id="postForm" class="post paper">
+            <img class="avatar" src="images/default.png" alt="Your avatar">
+            <div>
+              <div id="moods">
+                <h2>What is your mood level?</h2>
+                <img class ="mood" src="images/mad.png">
+                <img class ="mood" src="images/sad.png">
+                <img class ="mood" src="images/meh.png">
+                <img class ="mood" src="images/good.png">
+                <img class ="mood" src="images/great.png">
+              </div>
+              <div class="text">
+                <textarea id="newPost" placeholder="How are you feeling today?"></textarea>
+                <button type="submit" id="postButton">Post</button>
+              </div>
+            </div>
+          </form>
+
+          <div id="templatePost" class="post paper">
+            <img class="mood" src="">
+            <div>
+              <div class="postHeader">
+                <span class="time"></span>
+              </div>
+              <div class="text"></div>
+            </div>
+          </div>
+
+          <div id="feed"></div>
+        </section>
+
+        <section id="sidebar">
+          <section id="editPanel" class="paper">
+            <h2>Edit Profile</h2>
+            <div class="editItem">
+              <label>User ID:</label>
+              <div id="idContainer"></div>
+            </div>
+            <form class="editItem" id="nameForm">
+              <label for="nameInput">Display Name:</label>
+              <div class="inputLine">
+                <input name="name" id="nameInput">
+                <button name="submit" id="nameSubmit"><img src="images/save.svg" alt="Save"></button>
+              </div>
+            </form>
+            <form class="editItem" id="avatarForm">
+              <label for="avatarInput">Avatar URL:</label>
+              <div class="inputLine">
+                <input name="avatar" id="avatarInput">
+                <button name="submit" id="avatarSubmit"><img src="images/save.svg" alt="Save"></button>
+              </div>
+            </form>
+          </section>
+
+          <section id="dataPanel" class="paper">
+            <div id= "moodGraph">
+              <canvas id="moodChart"></canvas>
+            </div>
+          </section>
+          
+          <section class="paper">
+            <div id="averageMood">
+              <h2>Your overall mood is: </h2>
+              <img class="avgMood" src="">
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
